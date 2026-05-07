@@ -1,0 +1,260 @@
+:root{
+    --font-family: 'Montserrat', sans-serf;
+    --verde: #a3dc18;
+    --grisaz: #a4c1f4;
+    --rosa: #f21e63;
+    --turquesa: #18dcb3;
+    --celeste: #18a3dc;
+    --azul: #1841dc;
+    --amarillo: #f9b30b;
+    --bg-color: #f5f6f7;
+    --line-height: 1.7rem;
+    --bottom-margin: 0.5rem;
+    --bottom-margin2: 2rem;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+/*---------- CSS Resets---------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-3)
+}
+a:hover {
+    color: var(--color-1);
+}
+body{
+    background-color: var(--bg-color);
+    background-image: url(/imagenes/004Planetas.png);
+    background-size: contain;
+}
+/*-------Barra de navegación-------*/
+nav {
+    position: sticky;
+    padding: 2rem;
+    z-index: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+nav a {
+    color: #444141;
+}
+nav a:hover {
+    color: var(--color-3);
+    border-bottom: 2px;
+}
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+}
+.menu-hamburguesa {
+    color: #f9b30b;
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+/*------Seccion Hero--------*/
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    width: auto;
+    margin: auto;
+}
+.hero   .rectangle{
+    background-color:#18dcb3;
+    padding: 3rem;
+    text-align: center;
+    width: min-content;
+    height: 450px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.hero-imagen-desarrollador {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+.bio {
+    width: 25rem;
+    padding: 1rem;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px 1px #a4c1f4;
+}
+h2 {
+    font-family: Josefin Slab;
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+/*------Seccion sobre mi----*/
+.sobre-mi {
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 1rem;
+    margin: 7rem;
+}
+/*-----------Skills-----------*/
+.Habilidades {
+    max-width: 50rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+.Contenedor {
+    padding: 1.25rem;
+}
+.icon {
+    width: 10rem;
+    height: 10rem;
+}
+.icon-card {
+    background-color: var(--bg-color);
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px 1px #b3a9a9;
+    margin: 0.2rem;
+    padding: 10px;
+}
+/*-----------Cita-----------*/
+.cita{
+    background-color: #210b49;
+    height: auto;
+    align-content: center;
+    padding: 1rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+.cita h2 {
+    font-family: "Shadows Into Light Two", cursive;
+    color: aliceblue;
+    text-shadow: #b3a9a9;
+}
+
+.cita h3{
+    text-align: right;
+    color: #f5f6f7;
+}
+/*-----------Proyectos-----------*/
+.proyectos {
+    background-color:var(--bg-color);
+    padding:32px 0;
+    margin-top: 2rem;
+}
+.project-image{
+    width: 20rem
+}
+.proyectos .Contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seccion-titulo{
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.seccion-descripcion{
+    font-family: "Ysabeau", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.Contenedor .Tarjeta-proyectos {
+  position: relative;
+  margin: 0.3rem;
+}
+
+.Contenedor .Tarjeta-proyectos:hover img {
+  opacity: 0.2;
+}
+
+.Contenedor .Tarjeta-proyectos:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+
+
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
