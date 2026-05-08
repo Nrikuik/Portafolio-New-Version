@@ -3,11 +3,13 @@
     --verde: #a3dc18;
     --grisaz: #a4c1f4;
     --rosa: #f21e63;
-    --turquesa: #18dcb3;
+    --turquesa: #17caa3;
     --celeste: #18a3dc;
     --azul: #1841dc;
     --amarillo: #f9b30b;
     --bg-color: #f5f6f7;
+    --sombra-osc: #444141;
+    --sombra-clara: #b3a9a9;
     --line-height: 1.7rem;
     --bottom-margin: 0.5rem;
     --bottom-margin2: 2rem;
@@ -30,10 +32,10 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--color-3)
+    color: var(--verde)
 }
 a:hover {
-    color: var(--color-1);
+    color: var(--amarillo);
 }
 body{
     background-color: var(--bg-color);
@@ -53,7 +55,7 @@ nav a {
     color: #444141;
 }
 nav a:hover {
-    color: var(--color-3);
+    color: var(--verde);
     border-bottom: 2px;
 }
 nav ul {
@@ -61,7 +63,7 @@ nav ul {
     gap: 1.9rem;
 }
 .menu-hamburguesa {
-    color: #f9b30b;
+    color:  var(--amarillo);
     font-size: 2rem;
     border: 0;
     background-color: transparent;
@@ -78,13 +80,13 @@ nav ul {
     margin: auto;
 }
 .hero   .rectangle{
-    background-color:#18dcb3;
     padding: 3rem;
     text-align: center;
     width: min-content;
     height: 450px;
     margin: 20px;
     border-radius: 5px;
+    box-shadow: 0px 1px 1px 1px var(--sombra-clara);
 }
 .hero-imagen-desarrollador {
   width: 200px;
@@ -92,11 +94,13 @@ nav ul {
   margin: 20px;
 }
 .bio {
+    background-color: var(--bg-color);
     width: 25rem;
     padding: 1rem;
     border-radius: 3px;
-    box-shadow: 0px 1px 1px 1px #a4c1f4;
+    box-shadow: 0px 1px 1px 1px var(--sombra-clara);
 }
+
 h2 {
     font-family: Josefin Slab;
     margin-bottom: var(--bottom-margin);
@@ -108,7 +112,12 @@ h2 {
     width: auto;
     text-align: center;
     padding: 1rem;
-    margin: 7rem;
+    margin: 10rem;
+}
+.sobre-mi h2{
+    font-family: "Monda", sans-serif;
+    font-weight: 500;
+    text-shadow: 1px 2px #f5f6f7;
 }
 /*-----------Skills-----------*/
 .Habilidades {
@@ -133,12 +142,12 @@ h2 {
 }
 /*-----------Cita-----------*/
 .cita{
-    background-color: #210b49;
+    background-color: var(--celeste);
     height: auto;
     align-content: center;
-    padding: 1rem;
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    padding: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .cita h2 {
     font-family: "Shadows Into Light Two", cursive;
